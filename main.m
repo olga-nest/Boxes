@@ -12,13 +12,8 @@ int main(int argc, const char * argv[]) {
         float secondBoxVolume = [secondBox calculateVolume];
         NSLog(@"The volume on the first box is: %f", secondBoxVolume);
         
-        if (firstBoxVolume > secondBoxVolume) {
-            float insideBox = firstBoxVolume/secondBoxVolume;
-            NSLog(@"This box fits %f times inside the other.", insideBox);
-        } else {
-            float insideBox = secondBoxVolume/firstBoxVolume;
-            NSLog(@"This box fits %f times inside the other.", insideBox);
-        }
+        
+        NSLog(@"This box fits the other box %i times", [boxObj calculateNumberOfBoxesInsideThis:secondBox]);
         
 
     }

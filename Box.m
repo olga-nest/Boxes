@@ -25,5 +25,19 @@
     return height * width * length;
 }
 
+-(int)calculateNumberOfBoxesInsideThis:(Box *) inpBox {
+    int res = 0;
+    float currentBoxVolume = [self calculateVolume];
+    float inpBoxVolume = [inpBox calculateVolume];
+    
+    if (currentBoxVolume > inpBoxVolume) {
+        res = currentBoxVolume/inpBoxVolume;
+    } else {
+        res = inpBoxVolume/currentBoxVolume;
+    }
+    
+    return res;
+
+}
 
 @end

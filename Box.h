@@ -9,5 +9,6 @@
 
 -(id)initWithHeight:(float)h andWidth:(float)w andLength:(float)l;
 -(float)calculateVolume;
+-(int)calculateNumberOfBoxesInsideThis:(Box *) inpBox;
 
 @end
