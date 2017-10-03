@@ -5,8 +5,13 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 
         Box *boxObj = [[Box alloc]initWithHeight:100 andWidth:77 andLength:200];
-        float volume = [boxObj calculateVolume];
-        NSLog(@"The volume on the box is: %f", volume);
+        float firstBoxVolume = [boxObj calculateVolume];
+        NSLog(@"The volume on the first box is: %f", firstBoxVolume);
+        
+        Box *secondBox = [[Box alloc]initWithHeight:33 andWidth:44 andLength:55];
+        float secondBoxVolume = [secondBox calculateVolume];
+        NSLog(@"The volume on the first box is: %f", secondBoxVolume);
+        
         
     }
     return 0;
