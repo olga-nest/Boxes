@@ -21,7 +21,7 @@
     return [self initWithHeight:0 andWidth:0 andLength:0];
 }
 
--(float)CalculateVolume {
+-(float)calculateVolume {
     return height * width * length;
 }
 
