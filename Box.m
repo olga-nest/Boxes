@@ -4,14 +4,14 @@
 
 @synthesize height, width, length;
 
--(id)initWithHeight:(float)h andWidth:(float)w andLength:(float)l {
+-(id)initWithHeight:(float)height andWidth:(float)width andLength:(float)length {
     
     self = [super init];
     if (self) {
     
-        height = h;
-        width = w;
-        length = l;
+        self.height = height;
+        self.width = width;
+        self.length = length;
     }
     
     return self;

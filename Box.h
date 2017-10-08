@@ -7,7 +7,7 @@
 @property float length;
 
 
--(id)initWithHeight:(float)h andWidth:(float)w andLength:(float)l;
+-(id)initWithHeight:(float)height andWidth:(float)width andLength:(float)length;
 -(float)calculateVolume;
 -(int)calculateNumberOfBoxesInsideThis:(Box *) inpBox;
 
